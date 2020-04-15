@@ -1,0 +1,54 @@
+# load zgen
+source "${HOME}/.zgen/zgen.zsh"
+ZGEN_DIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/zgen
+ZSH_LPLUG_DIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh/lplug
+source $ZGEN_DIR/zgen.zsh
+zgen load 'zsh-users/zsh-completions'
+export ZSH_AUTOSUGGEST_USE_ASYNC=1
+export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+zgen load 'zsh-users/zsh-autosuggestions'
+zgen load 'zdharma/fast-syntax-highlighting'
+zgen load 'hlissner/zsh-autopair'
+zgen load 'skywind3000/z.lua'
+zgen load 'mafredri/zsh-async'
+zgen load $ZSH_LPLUG_DIR/color.zsh
+zgen load $ZSH_LPLUG_DIR/completion.zsh
+zgen load $ZSH_LPLUG_DIR/history.zsh
+zgen load $ZSH_LPLUG_DIR/alias-func.zsh
+zgen load $ZSH_LPLUG_DIR/theme.zsh
+zgen load $ZSH_LPLUG_DIR/git-prompt.zsh
+zgen load $ZSH_LPLUG_DIR/fzf-plugin.zsh
+
+# thefuck
+eval $(thefuck --alias)
+
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+
+# xmodmap 
+if [ -f ~/.Xmodmap ];then xmodmap ~/.Xmodmap; fi
+
+source /usr/share/nvm/init-nvm.sh
+# PATH
+export GOPATH=$HOME/go
+export GOBIN=/home/haduluoke/go/bin
+
+export PATH=$PATH:/home/haduluoke/.gem/ruby/2.7.0/bin
+export PATH=$PATH:/home/haduluoke/go/bin
+export PATH=$PATH:/home/haduluoke/EnvPaths
+
+# man page
+# Highlight the man manual
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;44;33m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
+
+# vulkan
+export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
+
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}  
+

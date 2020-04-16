@@ -1,6 +1,5 @@
 # dotfiles
 
-
 1. zsh
 2. tmux
 3. vim

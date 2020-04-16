@@ -14,6 +14,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias sourcezshrc="source ~/.zshrc"
 
 # git
+alias gl="git pull"
 alias gck="git checkout"
 alias gs="git status"
 alias gd="git diff"
@@ -24,6 +25,7 @@ alias gcm="git checkout master"
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gdem='git branch | grep -v "master" | xargs git branch -D '
 alias grm='git rebase master'
+alias grb='git rebase'
 
 
 # terminal
@@ -63,6 +65,9 @@ alias folder_usage='du --summarize --human-readable *'
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
+
+# docker
+alias dke="docker exec -it"
 
 extend_alias() {
     functions[_expand-aliases]=$@ 2>/dev/null

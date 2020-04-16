@@ -29,7 +29,6 @@ alias grb='git rebase'
 
 
 # terminal
-alias c="clear"
 alias open="xdg-open"
 
 # nvidia

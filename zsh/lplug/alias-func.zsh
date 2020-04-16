@@ -53,7 +53,7 @@ alias wifi-connect="nmcli device wifi connect"
 alias G_Drive="cd ~/GoogleDrive"
 
 # toggle random alacritty theme
-alias random_theme="alacritty-colorscheme -c ~/.config/alacritty/alacritty.yml -C ~/Documents/alacritty-theme/themes -T"
+alias random_theme="alacritty-colorscheme -c ~/.config/alacritty/alacritty.yml -C ~/.config/alacritty/alacritty-theme/themes -T"
 alias theme_name="alacritty-colorscheme -s"
 
 # folder disk usage

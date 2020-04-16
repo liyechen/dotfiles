@@ -1,13 +1,9 @@
-# alias
-alias docker_start="sudo systemctl start docker"
-alias docker_stop="sudo systemctl stop docker"
-
+# netdata monitor
 alias monitor_start="sudo systemctl start netdata.service"
 alias monitor_stop="sudo systemctl stop netdata.service"
 
 alias vim="nvim"
 alias vi="nvim"
-
 
 # zshrc
 alias zshconfig="nvim ~/.zshrc"
@@ -26,7 +22,7 @@ alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset 
 alias gdem='git branch | grep -v "master" | xargs git branch -D '
 alias grm='git rebase master'
 alias grb='git rebase'
-
+alias gb='git branch'
 
 # terminal
 alias open="xdg-open"
@@ -66,7 +62,10 @@ alias ll="exa -l"
 alias la="exa -la"
 
 # docker
+alias docker_start="sudo systemctl start docker"
+alias docker_stop="sudo systemctl stop docker"
 alias dke="docker exec -it"
+
 
 extend_alias() {
     functions[_expand-aliases]=$@ 2>/dev/null

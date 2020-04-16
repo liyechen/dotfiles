@@ -6,3 +6,6 @@
 3. vim
 4. alacritty
 5. i3config
+
+
+Ref： https://github.com/kevinhwang91/dotfiles

@@ -64,8 +64,8 @@ alias la="exa -la"
 # docker
 alias docker_start="sudo systemctl start docker"
 alias docker_stop="sudo systemctl stop docker"
-alias dst="docker_start"
-alias dsp="docker_stop"
+alias dst="docker start"
+alias dsp="docker stop"
 alias dke="docker exec -it"
 
 

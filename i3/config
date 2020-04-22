@@ -216,19 +216,19 @@ exec --no-startup-id xset s 0
 exec --no-startup-id xset dpms 2400 8000 9000
 
 bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus [instance="^(?!.*dropdown)"] scratchpad show
-# bindsym $mod+minus scratchpad show
+# bindsym $mod+minus [instance="^(?!.*dropdown)"] scratchpad show
+bindsym $mod+minus scratchpad show
 
 bindsym $mod+Shift+a exec flameshot gui
 
 # init windows
-for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] move scratchpad
-for_window [instance="dropdown"] border pixel 1
-for_window [instance="dropdown"] resize set 1100 500
-exec --no-startup-id $term --class dropdown
+# for_window [instance="dropdown"] floating enable
+# for_window [instance="dropdown"] move scratchpad
+# for_window [instance="dropdown"] border pixel 1
+# for_window [instance="dropdown"] resize set 1100 500
+# exec --no-startup-id $term --class dropdown
 
-bindsym $mod+p [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
+# bindsym $mod+p [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 
 # workspaces
 #assign [class="gnome-terminal"] $WS1

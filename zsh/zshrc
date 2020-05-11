@@ -9,14 +9,13 @@ export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
 zgen load 'zsh-users/zsh-autosuggestions'
 zgen load 'zdharma/fast-syntax-highlighting'
 zgen load 'hlissner/zsh-autopair'
-zgen load 'skywind3000/z.lua'
 zgen load 'mafredri/zsh-async'
 zgen load $ZSH_LPLUG_DIR/color.zsh
 zgen load $ZSH_LPLUG_DIR/completion.zsh
 zgen load $ZSH_LPLUG_DIR/history.zsh
 zgen load $ZSH_LPLUG_DIR/alias-func.zsh
 zgen load $ZSH_LPLUG_DIR/theme.zsh
-zgen load $ZSH_LPLUG_DIR/git-prompt.zsh
+# zgen load $ZSH_LPLUG_DIR/git-prompt.zsh
 zgen load $ZSH_LPLUG_DIR/fzf-plugin.zsh
 
 # thefuck

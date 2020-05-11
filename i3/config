@@ -202,11 +202,12 @@ bar {
         focused_workspace  #A4E2DC  #A4E2DC     #1F2D3A
         inactive_workspace #1F2D3A  #1F2D3A     #A4E2DC
     }
+
 }
 #
 
 # Personal
-exec_always --no-startup-id feh --bg-scale "/home/haduluoke/Pictures/Wallpapers/ye.jpg"
+exec_always --no-startup-id feh --bg-scale "/home/haduluoke/Pictures/Wallpapers/lake.jpeg"
 
 # gestures
 # exec_always --no-startup-id libinput-gestures-setup start
@@ -220,6 +221,10 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 bindsym $mod+Shift+a exec flameshot gui
+
+# remap caps to ctrl
+exec_always --no-startup-id setxkbmap -layout us -option ctrl:nocaps
+
 
 # init windows
 # for_window [instance="dropdown"] floating enable

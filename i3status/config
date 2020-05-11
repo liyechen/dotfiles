@@ -101,7 +101,7 @@ disk "/home" {
 
 volume master {
     format = " %volume"
-    format_muted = ""
+    format_muted = "m"
     device = "default"
     mixer = "Master"
     mixer_idx = 0
